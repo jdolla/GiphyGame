@@ -1,0 +1,20 @@
+.main-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    width: 100%;
+}
+
+#btn-box {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+}
+
+.box {
+    padding: 10px;
+}
+
+#gif-box {
+    min-width: 200px;
+}
