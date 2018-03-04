@@ -15,12 +15,14 @@
 <body>
     <div class="main-container">
         <div id="btn-box" class="box"></div>
-        <div id="gif-box" class="box">gif box</div>
+        <div id="gif-box" class="box"></div>
         <div id="form-box" class="box">
-            <form name="topics">
-                <h3>Add a Topic:</h3>
-                <input type="text" name="newTopic" id="newTopic" value="Add a Topic">
-                <button type="button" id="addTopic">Add Topic</button>
+            <form name="topics" id="form" onsubmit="event.preventDefault(); addNewTopic();">
+                <div id="controls">
+                    <h3 id="topic-label">Add a Topic:</h3>
+                    <input type="text" name="newTopic" id="newTopic">
+                    <button type="button" id="addTopic" onclick="addNewTopic()">Add Topic</button>
+                </div>
             </form>
         </div>
     </div>

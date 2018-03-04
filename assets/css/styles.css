@@ -1,20 +1,48 @@
 .main-container {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: left;
-    width: 100%;
 }
 
 #btn-box {
     grid-column-start: 1;
     grid-column-end: 3;
-    text-align: left;
+    text-align: right;
 }
 
 .box {
     padding: 10px;
 }
 
-#gif-box {
-    min-width: 200px;
+#form-box {
+    margin-left: auto;
+}
+
+#controls {
+    text-align: left;
+}
+
+.gif-img {
+    max-width: 100%;
+}
+.gif-btn {
+    display: inline-block;
+}
+
+.topic-btn {
+    background-color: lightblue; /* Green */
+    border: 1.5px solid rgb(77, 57, 80);
+    border-radius: 25px;
+    color: rgb(77, 57, 80);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2.5px;
+    display: inline-block;
+}
+
+.topic-btn:hover {
+    color:lightblue;
+    background-color:  rgb(77, 57, 80);
+    border-color: lightblue;
 }
